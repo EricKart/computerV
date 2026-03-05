@@ -1,0 +1,45 @@
+# ─── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ─── Virtual Environment ─────────────────────────────────
+venv/
+.env/
+env/
+
+# ─── IDE / Editor ────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─── Jupyter Notebook Checkpoints ────────────────────────
+.ipynb_checkpoints/
+
+# ─── OS Files ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Model Weights (large files) ─────────────────────────
+models/*.pth
+models/*.h5
+models/*.pt
+*.onnx
+
+# ─── Data (downloaded at runtime) ─────────────────────────
+data/cifar-10-batches-py/
+data/cifar-10-python.tar.gz
+data/*.tar.gz
+data/raw/
+
+# ─── Logs & Outputs ─────────────────────────────────────
+outputs/
+logs/
+runs/
+*.log

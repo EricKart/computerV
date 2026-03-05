@@ -589,3 +589,27 @@ az ml online-deployment get-logs \
 **← Previous:** [CNN + RNN + LSTM Combined](05_cnn_rnn_lstm_combined.md) | **Next →** [LinkedIn Publishing Guide](07_linkedin_publishing_guide.md)
 
 </div>
+
+---
+
+## Deep-Dive Operations Pack
+
+### Deployment Readiness Checklist
+- Model file exists and loads locally.
+- ONNX export validated with local inference.
+- Azure subscription, resource group, and workspace are confirmed.
+- Endpoint auth and test payload are documented.
+
+### Validation Workflow
+1. Test model locally before cloud registration.
+2. Validate endpoint with a known sample payload.
+3. Track latency, failures, and cost after deployment.
+
+### Production Hardening Notes
+- Add input schema validation in scoring code.
+- Log request IDs and model version for traceability.
+- Configure alerts for failure rate and latency spikes.
+- Always keep rollback path to previous model version.
+
+### Assignment
+- Deploy one model version, test it, then deploy a second version and document blue/green or rollback strategy.

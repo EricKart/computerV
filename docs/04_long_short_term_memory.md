@@ -556,3 +556,25 @@ remember information from Row 1 when processing Row 32.
 **← Previous:** [RNN](03_recurrent_neural_networks.md) | **Next →** [CNN + RNN + LSTM Combined](05_cnn_rnn_lstm_combined.md)
 
 </div>
+
+---
+
+## Deep-Dive Study Pack
+
+### Learning Objectives
+- Explain each LSTM gate and its role in memory control.
+- Interpret cell state vs hidden state behavior.
+- Compare LSTM and vanilla RNN performance characteristics.
+
+### Mini Lab (20-25 min)
+1. Train LSTM and record best test accuracy.
+2. Toggle bidirectional setting (if applicable) and compare results.
+3. Change hidden size and observe accuracy/runtime tradeoff.
+
+### Quick Concept Check
+1. What does the forget gate do mathematically and conceptually?
+2. Why can LSTM preserve long-range dependencies better than RNN?
+3. When might GRU be preferred over LSTM?
+
+### Assignment
+- Build a table comparing RNN vs LSTM on stability, memory, complexity, and observed CIFAR-10 results.

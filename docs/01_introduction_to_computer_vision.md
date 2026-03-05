@@ -407,3 +407,25 @@ graph LR
 **Next Chapter →** [CNN — Convolutional Neural Networks](02_convolutional_neural_networks.md)
 
 </div>
+
+---
+
+## Deep-Dive Study Pack
+
+### Learning Objectives
+- Explain how images are represented as numeric tensors.
+- Compare human visual processing with machine vision pipelines.
+- Distinguish classification, detection, and segmentation tasks.
+
+### Mini Lab (15-20 min)
+1. Open a sample image with Python and print shape, dtype, and min/max values.
+2. Convert RGB to grayscale and compare dimensions.
+3. Normalize pixel values to [0,1] and explain why this helps training.
+
+### Reflection Questions
+1. Why does model performance depend on preprocessing quality?
+2. Which CV task would you use for counting objects in a street scene?
+3. What information is lost when converting RGB to grayscale?
+
+### Assignment
+- Create a one-page note explaining the full image processing pipeline from raw input to model prediction with one practical example.

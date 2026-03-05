@@ -475,3 +475,24 @@ Test Accuracy: ~60-65%
 **← Previous:** [CNN](02_convolutional_neural_networks.md) | **Next →** [LSTM — Long Short-Term Memory](04_long_short_term_memory.md)
 
 </div>
+
+---
+
+## Deep-Dive Study Pack
+
+### Learning Objectives
+- Describe hidden state updates in an unrolled RNN.
+- Explain BPTT and why gradients can vanish/explode.
+- Justify when RNN is appropriate vs not appropriate in CV tasks.
+
+### Mini Lab (20 min)
+1. Train the RNN script and capture final accuracy.
+2. Reduce hidden size and compare performance.
+3. Apply gradient clipping value changes and observe stability.
+
+### Error Analysis Prompts
+1. Which CIFAR-10 classes are hardest for the RNN and why?
+2. How does treating images as row sequences limit spatial understanding?
+
+### Assignment
+- Write a short comparison report: CNN vs RNN on static images (strengths, limits, evidence from outputs).

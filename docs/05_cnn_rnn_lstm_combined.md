@@ -331,7 +331,7 @@ graph LR
 
 ## 💻 Our Implementation
 
-Our combined model in `src/04_combined/cnn_rnn_lstm_video_classifier.py`:
+Our combined model in `src/04_combined/cnn_rnn_lstm_combined.py`:
 
 ### Architecture Decision
 
@@ -371,7 +371,7 @@ class CNN_LSTM_Classifier:
 ### Run It
 
 ```bash
-python src/04_combined/cnn_rnn_lstm_video_classifier.py
+python -m src.04_combined.cnn_rnn_lstm_combined
 ```
 
 ---
@@ -418,3 +418,25 @@ graph LR
 **← Previous:** [LSTM](04_long_short_term_memory.md) | **Next →** [Azure Deployment Guide](06_azure_deployment_guide.md)
 
 </div>
+
+---
+
+## Deep-Dive Study Pack
+
+### Learning Objectives
+- Explain the split of responsibilities: CNN for spatial, LSTM for sequential patterns.
+- Understand why hybrid models are useful for video-like data.
+- Interpret when combined architectures outperform single-model baselines.
+
+### Mini Lab (25-30 min)
+1. Run combined model and capture outputs.
+2. Compare confusion matrix vs CNN-only model.
+3. Discuss classes improved/degraded and hypothesize causes.
+
+### Architecture Review Checklist
+- Feature extractor dimensions are validated.
+- Sequence length and hidden size are documented.
+- Training curves and per-class accuracy are compared against baselines.
+
+### Assignment
+- Propose one improvement (attention, GRU, Transformer head, stronger CNN backbone) and justify expected impact.

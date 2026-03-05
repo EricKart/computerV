@@ -73,7 +73,7 @@ Run the training scripts and save the output plots:
 python src/01_cnn/cnn_image_classifier.py
 python src/02_rnn/rnn_sequence_model.py
 python src/03_lstm/lstm_model.py
-python src/04_combined/cnn_rnn_lstm_video_classifier.py
+python -m src.04_combined.cnn_rnn_lstm_combined
 ```
 
 Take screenshots of:
@@ -401,3 +401,31 @@ Copy-paste these relevant hashtags:
 **Now go build, deploy, and share! 🚀**
 
 </div>
+
+---
+
+## Deep-Dive Publishing Pack
+
+### Content Quality Checklist
+- Clear hook in first two lines.
+- Problem, approach, and result are each stated in one short paragraph.
+- At least one visual (architecture or results plot) is attached.
+- Repository link is included and verified.
+- CTA invites feedback or technical discussion.
+
+### 7-Day Follow-Up Plan
+1. Day 1: Publish project announcement.
+2. Day 2: Reply to all comments and questions.
+3. Day 3: Publish technical deep-dive carousel.
+4. Day 5: Share one key failure and what you learned.
+5. Day 7: Post outcomes, metrics, and next milestone.
+
+### Metrics to Track
+- impressions
+- saves
+- profile views
+- repository clicks
+- inbound collaboration/recruiter messages
+
+### Assignment
+- Publish one short post and one deep-dive post, then compare engagement and write a brief reflection.

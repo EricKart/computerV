@@ -497,3 +497,25 @@ python src/01_cnn/cnn_image_classifier.py
 **← Previous:** [Introduction to CV](01_introduction_to_computer_vision.md) | **Next →** [RNN — Recurrent Neural Networks](03_recurrent_neural_networks.md)
 
 </div>
+
+---
+
+## Deep-Dive Study Pack
+
+### Learning Objectives
+- Compute convolution output sizes using kernel, stride, and padding.
+- Explain why parameter sharing makes CNNs efficient.
+- Interpret feature maps and pooling behavior.
+
+### Mini Lab (20-30 min)
+1. Change kernel size in the CNN and track shape changes layer by layer.
+2. Disable data augmentation and compare train vs test accuracy.
+3. Inspect confusion matrix and identify top-3 confused class pairs.
+
+### Diagnostic Checklist
+- Input shape is correct (N, C, H, W).
+- Loss decreases across epochs.
+- Overfitting signs are monitored (train up, test flat/down).
+
+### Assignment
+- Run 2 experiments with different learning rates and summarize effects on convergence speed and final accuracy.

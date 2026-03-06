@@ -622,10 +622,15 @@ The `venv/` folder contains your project's virtual environment with all installe
 <summary><strong>Q: How do I update to the latest code from the instructor?</strong></summary>
 
 ```bash
-git pull origin main
+# Pull the latest changes (--ff-only prevents merge commits)
+git pull --ff-only
+
+# Re-run setup to install any new dependencies
 ./setup.sh           # macOS/Linux
 .\setup.ps1          # Windows
 ```
+
+> 💡 If `git pull` fails, you may have local changes. Run `git stash` first to save your changes, then `git pull --ff-only`, then `git stash pop` to restore your changes.
 </details>
 
 ---

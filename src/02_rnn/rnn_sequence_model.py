@@ -266,7 +266,7 @@ def main():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="min", factor=0.1, patience=3, verbose=True,
+        optimizer, mode="min", factor=0.1, patience=3,
     )
 
     # ── Training ──

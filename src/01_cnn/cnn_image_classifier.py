@@ -294,9 +294,12 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
     # Reduce LR by 0.1× when test loss plateaus for 3 epochs
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode="min", factor=0.1, patience=3,
-    )
+   scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+    optimizer,
+    mode="min",
+    factor=0.1,
+    patience=3,
+)
 
     # ---- 3. Training loop ----
     train_losses, test_losses = [], []

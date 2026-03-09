@@ -293,8 +293,8 @@ def main():
     # Adam optimiser — adaptive learning rate, works well out of the box
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE)
 
-    # Reduce LR by 0.1× when test loss plateaus for 3 epochs
-   scheduler = optim.lr_scheduler.ReduceLROnPlateau(
+    # Reduce LR by 0.1× when test loss plateaus for 3 epoch
+  scheduler = optim.lr_scheduler.ReduceLROnPlateau(
     optimizer,
     mode="min",
     factor=0.1,
